@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de textos</title>
-    <style>
-        mark {
-            background-color: turquoise;
-        }
-    </style>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito / Destaquue</h2>
-    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semantica)</p>
-    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag strong (semantica)</p>
-    <h2>Italico / Ênfase</h2>
-    <p>Nesta frase temos um <I>termo em italico</I> usando a tag I (não semantica)</p>
-    <p>Nesta frase temos um <em>termo em enfase </em>usando a tag EM (Semantica)</p>
-    <h2>Texto marcado</h2>
-    <p>Também podemos criar <mark>um texto marcado</mark> usando a tag mark</p>
-    <p>E no outro paragrafo temos<mark> outro texto marcado</mark> no final</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno </small>neste paragrafo</p>
-    <h2>Texto Deletado</h2>
-    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido mas não considerado</p>
-    <h2>Texto Inserido</h2>
-    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois (semantico)</p>
-    <p>Existe também o <u>sublinhado </u> com a tag U (Nao semantico)</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
-    <h2>Texto subescrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O </p>
+    <h1>Outras formatações</h1>
+    <h2>Codigo fonte / Pré formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre><!--Mantem a formatação existente-->
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Fábio Flatschart em seu livro HTML 5 - Embarque Imediato</p>
+    <blockquote>
+        O HTML 5 não é uma ruptura, é a continuidade e a evolução do modelo concebido por Tim Berners-Lee nos anos 1990. O embarque é imediato, chegue com antecedência!
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Muito legal</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Criando coisas em HTML</bdo></p>
 </body>
 </html>
