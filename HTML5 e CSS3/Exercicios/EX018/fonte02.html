@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trabalhando com fontes externas</title>
+    <title>Trabalhando com fontes baixadas</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @font-face {
+            font-family:'Aliqa';
+            src: url('fontes/Aliqa.otf') format('opentype'), url('fontes/Aliqa.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Aple advanced typography)
+                - svg
+            */
+        }
 
         body {
-            font-family: 'work Sans', Arial, Helvetica, sans-serif;
-            font: 16px;
-            color: black;    
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         h1 {
-            font-family: 'Fredericka the Great', cursive;
-            font-size: 3em;
+            font-family:'Aliqa', Times, serif;
+            font-size: 6em;
             font-weight: normal;
         }
 
         h2 {
-            font-family: 'Kaushan Script', serif;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <h1>Trabalhando com fontes externas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In necessitatibus pariatur quia voluptas deleniti sunt esse tenetur asperiores enim consectetur, iure, facere quaerat beatae sed obcaecati non nobis quo officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero similique pariatur illum nihil quam quis nostrum aliquid maiores, dolore error eos omnis fugit accusamus deserunt earum quae illo eveniet!</p>
-    <h2>subtitulo</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi omnis itaque recusandae deleniti ipsa beatae cum cumque at hic ut optio repellat, porro debitis eum doloremque laboriosam. Dolore, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis neque fuga doloremque aut quae alias voluptate amet deserunt quaerat excepturi facere laboriosam tenetur quidem soluta possimus adipisci ullam. Ducimus?</p>
-
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi omnis alias officiis laudantium, autem repudiandae. Similique debitis nesciunt modi aut inventore ab quia accusantium sunt iusto sequi, alias a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem magnam alias provident inventore tempora ab non quam incidunt sed. Alias voluptates cupiditate qui reprehenderit aspernatur itaque provident maiores, architecto eos.</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit soluta eaque saepe cupiditate porro quo sint perspiciatis exercitationem voluptatibus, cumque ipsum! Aut sunt impedit blanditiis ipsam quasi fugiat, eum cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel natus voluptates dolorem expedita deserunt voluptatem quaerat corporis dolore! Dolorum deleniti sit atque repellendus eius. Excepturi officia laboriosam recusandae minus tenetur.</p>
 </body>
 </html>
