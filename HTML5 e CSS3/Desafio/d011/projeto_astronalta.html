@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Astronauta</title>
+    <style>
+        /* A Centralização horizontal e vertical deve ser feita com duas caixa uma dentro da outra, onde uma tem position: relative e outra position:absolute, com altura da primeira caixa de 100% da Veiwport de altura, e a segunda com propriedades left e top com 50%, além de transform: translate(-50%, -50%) */
+        #container {
+            background-image: url(espaco.jpg);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 94vh;
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url(astronauta.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
