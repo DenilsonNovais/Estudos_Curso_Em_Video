@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro documento...</title>
+    <style>
+        body {
+            background-color: #46aa5ce7;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        // Para adição -> (number) + (number)
+        // Para concatenação (string) + (string)
+        // Para converter de numero para string -> String(Nº) ou Nº.toString
+
+        // ParseInt converte para número inteiro
+        // parseFloat converte para número real. ex= 2.3
+        // Number serve para os dois tipos numericos
+        var n1 = parseInt(window.prompt('Digite primeiro número'));// todo prompt retorna uma string
+        var n2 = parseInt(window.prompt('Digite segundo número'));
+
+        var n1 = parseFloat(window.prompt('Digite primeiro número'));
+        var n2 = parseFloat(window.prompt('Digite segundo número'));
+
+        var n1 = Number(window.prompt('Digite primeiro número'));
+        var n2 = Number(window.prompt('Digite segundo número'));
+        var soma = n1 + n2;
+        // window.alert('A soma dos números é: ' + soma);
+
+        // templates strings
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`);
+
+    </script>
+</body>
+</html>
