@@ -7,13 +7,46 @@
     <title>Operadores</title>
 </head>
 <body>
-    <h1>Operadores relacionais de comparação e ternarios</h1>
+    <h1>Operadores Relacionais, Logicos e Ternários</h1>
 
     <script>
-        var a = 8;
-        var b = 4;
+        /* Precedencia dos operadores: 1 - Aretimeticos, 2 - Relacionais, 3 - Logicos (! - && - ||)
+            # Operadores Relacionais
+              * >  Maior que | <  Menor que | >= Maior ou igual | <= Menor ou Igual | == Igual a | != Diferente de | === Identico a;
+            # Operadores Logicos
+              * ! Negação - && Conjunção E - || Disjunção OU;
+            # Operador Ternário
+              *  ?: - possue tres partes, estarão sempre na mesma operação
+              ex: teste ? true : false | média >=7 ? "Aprovado" : "Reprovado";
+            
+        */
 
-        document.write(a > b);
+        var a = 4;
+        var b = 8;
+        var media = 8;
+
+
+        if(a >= b || a != b) {
+            document.write('Uma das operações é verdadeira <br>');
+        }else {
+            document.write('Nenhuma das operações sao verdadeiras <br>');
+        }
+
+        if(a >= b && a != b) {
+            document.write('Uma das operações é verdadeira <br>');
+        }else {
+            document.write('Nenhuma das operações sao verdadeiras <br>');
+        }
+
+        if(!a >= b) {
+            document.write('Uma das operações é verdadeira <br>');
+        }else {
+            document.write('Nenhuma das operações sao verdadeiras <br>');
+        }
+
+        document.write(media >= 7?"Aprovado":"Reprovado");
+
+        // document.write(a > b);
     </script>
 </body>
 </html>
